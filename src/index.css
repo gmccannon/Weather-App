@@ -7,6 +7,62 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  
 }
 
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  height: 8vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style for the box that stands out */
+.weather-output {
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 10px; /* Adjust the value to control the roundness */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-form {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box {
+  height: 90%; /* Adjust width as needed */
+  width: 15vw;
+  font-size: large;
+}
